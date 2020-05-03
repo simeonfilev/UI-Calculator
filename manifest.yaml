@@ -1,0 +1,6 @@
+---
+applications:
+- name: ui5Calculator
+  memory: 256M
+  buildpack: nodejs_buildpack
+  command: ui5 serve
