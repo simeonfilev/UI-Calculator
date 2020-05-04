@@ -1,12 +1,11 @@
-
 /*global QUnit*/
 
 sap.ui.require([
-		"sap/ui/acad/calculator/controller/CalculatorPanel.controller",      
+		"sap/ui/acad/calculator/controller/CalculatorPanel.controller",
 	],
 	function (Controller) {
-	
-});
+
+	});
 
 
 sap.ui.define([
@@ -40,4 +39,3 @@ sap.ui.define([
 	});
 
 });
-

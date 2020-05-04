@@ -1,113 +1,29 @@
-<mvc:View
-	controllerName="sap.ui.acad.calculator.controller.CalculatorPanel"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
-	<Panel
-		class="sapUiResponsiveMargin"
-		width="auto">
+<mvc:View controllerName="sap.ui.acad.calculator.controller.CalculatorPanel" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	<Panel class="sapUiResponsiveMargin" width="auto">
 		<content>
-		<FormattedText
-				htmlText="Answer: {/calculator/answer}"
-				class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"
-				width="95%"
-				id="answer"/>
-			<Input
-				value="{/calculator/expression}"
-				valueLiveUpdate="true"
-				width="82%"
-				id="expressionField"/>
-			<Button
-				text="Calculate"
-				press=".calculate"
-				class="myCustomText"/>
+			<FormattedText htmlText="Answer: {/calculator/answer}" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" width="95%" id="answer" />
+			<Input value="{/calculator/expression}" valueLiveUpdate="true" width="82%" id="expressionField" />
+			<Button text="Calculate" press=".calculate" class="myCustomText" />
 		</content>
 	</Panel>
-	<Panel
-		class="sapUiResponsiveMargin"
-		width="auto">
+	<Panel class="sapUiResponsiveMargin" width="auto">
 		<content>
-			<Button
-				id="1"
-				text="1"
-				press=".addToExpression"
-				class="myCustomText"
-				width="30%"
-				/>
-			<Button
-				text="2"
-				press=".addToExpression"
-				class="myCustomText"
-				width="30%"/>
-			<Button
-				text="3"
-				press=".addToExpression"
-				class="myCustomText"
-				width="30%"/>
-			<Button
-				text="4"
-				press=".addToExpression"
-				class="myCustomText"
-				width="30%"/>
-			<Button
-				text="5"
-				press=".addToExpression"
-				class="myCustomText"
-				width="30%"/>
-			<Button
-				text="6"
-				press=".addToExpression"
-				class="myCustomText"
-				width="30%"/>
-			<Button
-				text="7"
-				press=".addToExpression"
-				class="myCustomText"
-				width="30%"/>
-			<Button
-				text="8"
-				press=".addToExpression"
-				class="myCustomText"
-				width="30%"/>
-			<Button
-				text="9"
-				press=".addToExpression"
-				class="myCustomText"
-				width="30%"/>
-			<Button
-				text="("
-				press=".addToExpression"
-				class="myCustomText"
-				width="30%"/>
-			<Button
-				text="0"
-				press=".addToExpression"
-				class="myCustomText"
-				width="30%"/>
-			<Button
-				text=")"
-				press=".addToExpression"
-				class="myCustomText"
-				width="30%"/>
-			<Button
-				text="+"
-				press=".addToExpression"
-				class="myCustomText"
-				width="22.5%"/>
-			<Button
-				text="-"
-				press=".addToExpression"
-				class="myCustomText"
-				width="22.5%"/>
-			<Button
-				text="/"
-				press=".addToExpression"
-				class="myCustomText"
-				width="22.5%"/>
-			<Button
-				text="*"
-				press=".addToExpression"
-				class="myCustomText"
-				width="22.5%"/>
+			<Button id="1" text="1" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button text="2" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button text="3" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button text="4" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button text="5" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button text="6" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button text="7" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button text="8" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button text="9" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button text="(" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button text="0" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button text=")" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button text="+" press=".addToExpression" class="myCustomText" width="22.5%" />
+			<Button text="-" press=".addToExpression" class="myCustomText" width="22.5%" />
+			<Button text="/" press=".addToExpression" class="myCustomText" width="22.5%" />
+			<Button text="*" press=".addToExpression" class="myCustomText" width="22.5%" />
 		</content>
 	</Panel>
 

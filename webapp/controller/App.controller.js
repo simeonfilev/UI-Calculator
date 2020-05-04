@@ -3,7 +3,6 @@ sap.ui.define([
 ], function (Controller) {
 	"use strict";
 
-	return Controller.extend("sap.ui.acad.calculator.controller.App", {
-	});
+	return Controller.extend("sap.ui.acad.calculator.controller.App", {});
 
 });

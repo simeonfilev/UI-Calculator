@@ -14,7 +14,7 @@ sap.ui.define([
 			});
 
 			var sPath = "../localService";
-			
+
 			oMockServer.start();
 		}
 	};

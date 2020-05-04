@@ -6,15 +6,15 @@ sap.ui.define([
 
 	return UIComponent.extend("sap.ui.acad.calculator.Component", {
 
-		metadata : {
+		metadata: {
 			manifest: "json"
 		},
-		init : function () {
+		init: function () {
 			UIComponent.prototype.init.apply(this, arguments);
 			var oData = {
-				calculator : {
-                    expression : "",
-                    answer:"0"
+				calculator: {
+					expression: "",
+					answer: "0"
 				}
 			};
 			var oModel = new JSONModel(oData);
@@ -22,4 +22,3 @@ sap.ui.define([
 		}
 	});
 });
-
