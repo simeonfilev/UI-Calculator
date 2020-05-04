@@ -1,13 +1,10 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-], function (Controller, MessageToast) {
+], function (Controller) {
 	"use strict";
 
 	return Controller.extend("sap.ui.acad.calculator.controller", {
 
-		onShowHello : function () {
-			MessageToast.show(sMsg);
-        },
         calculate:function(){
             var sExpression = this.getView().getModel().getProperty("/calculator/expression");
             
@@ -31,6 +28,10 @@ sap.ui.define([
                   var dAnswer = oJSONData['answer'];
                   oModel.setProperty("/calculator/answer",dAnswer);
                 }
+                else{
+                  oModel.setProperty("/calculator/answer","INVALID EXPRESSION");
+                  oModel.setProperty("/calculator/expression","");
+                }
               }
         },
         addToExpression:function(e){
@@ -43,9 +44,7 @@ sap.ui.define([
         }
 
 	});
-
-});
-function formatParams( params ){
+  function formatParams( params ){
     return "?" + Object
           .keys(params)
           .map(function(key){
@@ -53,3 +52,4 @@ function formatParams( params ){
           })
           .join("&")
   }
+});

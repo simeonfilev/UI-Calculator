@@ -14,11 +14,12 @@
 			<Input
 				value="{/calculator/expression}"
 				valueLiveUpdate="true"
-				width="82%"/>
+				width="82%"
+				id="expressionField"/>
 			<Button
-				text="{i18n>calculate}"
+				text="Calculate"
 				press=".calculate"
-				class="myCustomButton"/>
+				class="myCustomText"/>
 		</content>
 	</Panel>
 	<Panel
@@ -26,85 +27,86 @@
 		width="auto">
 		<content>
 			<Button
+				id="1"
 				text="1"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="30%"
 				/>
 			<Button
 				text="2"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="30%"/>
 			<Button
 				text="3"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="30%"/>
 			<Button
 				text="4"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="30%"/>
 			<Button
 				text="5"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="30%"/>
 			<Button
 				text="6"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="30%"/>
 			<Button
 				text="7"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="30%"/>
 			<Button
 				text="8"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="30%"/>
 			<Button
 				text="9"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="30%"/>
 			<Button
 				text="("
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="30%"/>
 			<Button
 				text="0"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="30%"/>
 			<Button
 				text=")"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="30%"/>
 			<Button
 				text="+"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="22.5%"/>
 			<Button
 				text="-"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="22.5%"/>
 			<Button
 				text="/"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="22.5%"/>
 			<Button
 				text="*"
 				press=".addToExpression"
-				class="myCustomButton"
+				class="myCustomText"
 				width="22.5%"/>
 		</content>
 	</Panel>
