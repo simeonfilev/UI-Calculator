@@ -20,16 +20,18 @@ sap.ui.define([
       var oModel = this.getView().getModel();
       oxhr.onerror = function () {
         oModel.setProperty("/calculator/answer", "INVALID EXPRESSION");
-        oModel.setProperty("/calculator/expression", "");
+        oModel.setProperty("/calculator/expression", "0");
+       
       }
       oxhr.onload = function () {
         if (oxhr.status == 200) {
           var oJSONData = JSON.parse(this.responseText);
           var dAnswer = oJSONData['answer'];
           oModel.setProperty("/calculator/answer", dAnswer);
+          oModel.setProperty("/calculator/expression", dAnswer);
         } else {
           oModel.setProperty("/calculator/answer", "INVALID EXPRESSION");
-          oModel.setProperty("/calculator/expression", "");
+          oModel.setProperty("/calculator/expression", "0");
         }
       }
     },

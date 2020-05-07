@@ -3,27 +3,27 @@
 		<content>
 			<FormattedText htmlText="Answer: {/calculator/answer}" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" width="95%" id="answer" />
 			<Input value="{/calculator/expression}" valueLiveUpdate="true" width="82%" id="expressionField" />
-			<Button text="Calculate" press=".calculate" class="myCustomText" />
+			<Button text="Calculate" press=".calculate" class="myCustomText" id="calculateButton" />
 		</content>
 	</Panel>
 	<Panel class="sapUiResponsiveMargin" width="auto">
 		<content>
 			<Button id="1" text="1" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button text="2" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button text="3" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button text="4" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button text="5" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button text="6" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button text="7" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button text="8" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button text="9" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button text="(" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button text="0" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button text=")" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button text="+" press=".addToExpression" class="myCustomText" width="22.5%" />
-			<Button text="-" press=".addToExpression" class="myCustomText" width="22.5%" />
-			<Button text="/" press=".addToExpression" class="myCustomText" width="22.5%" />
-			<Button text="*" press=".addToExpression" class="myCustomText" width="22.5%" />
+			<Button id="2" text="2" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button id="3" text="3" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button id="4" text="4" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button id="5" text="5" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button id="6" text="6" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button id="7" text="7" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button id="8" text="8" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button id="9" text="9" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button id="leftPar"  text="(" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button id="0" text="0" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button id="rightPar"  text=")" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button  id="sumButton" text="+" press=".addToExpression" class="myCustomText" width="22.5%" />
+			<Button id="subtButton" text="-" press=".addToExpression" class="myCustomText" width="22.5%" />
+			<Button id="divButton" text="/" press=".addToExpression" class="myCustomText" width="22.5%" />
+			<Button id="multButton" text="*" press=".addToExpression" class="myCustomText" width="22.5%" />
 		</content>
 	</Panel>
 
