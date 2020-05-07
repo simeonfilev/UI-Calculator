@@ -8,7 +8,7 @@ sap.ui.define([
     calculate: function () {
       var sExpression = this.getView().getModel().getProperty("/calculator/expression");
 
-      var sEndpoint = "https://restcalculator.cfapps.eu10.hana.ondemand.com/calculator/expressions";
+      var sEndpoint = "http://localhost:8085/calculator/expressions";
       var params = {
         expression: sExpression
       };
@@ -21,7 +21,6 @@ sap.ui.define([
       oxhr.onerror = function () {
         oModel.setProperty("/calculator/answer", "INVALID EXPRESSION");
         oModel.setProperty("/calculator/expression", "0");
-       
       }
       oxhr.onload = function () {
         if (oxhr.status == 200) {
@@ -41,9 +40,7 @@ sap.ui.define([
       var sButtonText = oButton.mProperties.text;
       var sNewExpression = sExpression + sButtonText;
       this.getView().getModel().setProperty("/calculator/expression", sNewExpression);
-
     }
-
   });
 
   function formatParams(params) {

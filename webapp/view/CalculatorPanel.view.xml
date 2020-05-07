@@ -17,14 +17,15 @@
 			<Button id="7" text="7" press=".addToExpression" class="myCustomText" width="30%" />
 			<Button id="8" text="8" press=".addToExpression" class="myCustomText" width="30%" />
 			<Button id="9" text="9" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button id="leftPar"  text="(" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button id="leftPar" text="(" press=".addToExpression" class="myCustomText" width="30%" />
 			<Button id="0" text="0" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button id="rightPar"  text=")" press=".addToExpression" class="myCustomText" width="30%" />
-			<Button  id="sumButton" text="+" press=".addToExpression" class="myCustomText" width="22.5%" />
+			<Button id="rightPar" text=")" press=".addToExpression" class="myCustomText" width="30%" />
+			<Button id="sumButton" text="+" press=".addToExpression" class="myCustomText" width="22.5%" />
 			<Button id="subtButton" text="-" press=".addToExpression" class="myCustomText" width="22.5%" />
 			<Button id="divButton" text="/" press=".addToExpression" class="myCustomText" width="22.5%" />
 			<Button id="multButton" text="*" press=".addToExpression" class="myCustomText" width="22.5%" />
 		</content>
 	</Panel>
+
 
 </mvc:View>

@@ -20,7 +20,9 @@ sap.ui.define([
                         id: "2",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '2' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '2' button and clicked it")
+                        },
                         errorMessage: "Did not find the '2' button on the CalculatorPanel view"
                     });
                 },
@@ -29,7 +31,9 @@ sap.ui.define([
                         id: "3",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '3' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '3' button and clicked it")
+                        },
                         errorMessage: "Did not find the '3' button on the CalculatorPanel view"
                     });
                 },
@@ -38,7 +42,9 @@ sap.ui.define([
                         id: "4",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '4' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '4' button and clicked it")
+                        },
                         errorMessage: "Did not find the '4' button on the CalculatorPanel view"
                     });
                 },
@@ -47,7 +53,9 @@ sap.ui.define([
                         id: "5",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '5' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '5' button and clicked it")
+                        },
                         errorMessage: "Did not find the '5' button on the CalculatorPanel view"
                     });
                 },
@@ -56,7 +64,9 @@ sap.ui.define([
                         id: "6",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '6' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '6' button and clicked it")
+                        },
                         errorMessage: "Did not find the '6' button on the CalculatorPanel view"
                     });
                 },
@@ -65,7 +75,9 @@ sap.ui.define([
                         id: "7",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '7' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '7' button and clicked it")
+                        },
                         errorMessage: "Did not find the '7' button on the CalculatorPanel view"
                     });
                 },
@@ -74,7 +86,9 @@ sap.ui.define([
                         id: "8",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '8' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '8' button and clicked it")
+                        },
                         errorMessage: "Did not find the '8' button on the CalculatorPanel view"
                     });
                 },
@@ -83,7 +97,9 @@ sap.ui.define([
                         id: "9",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '9' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '9' button and clicked it")
+                        },
                         errorMessage: "Did not find the '9' button on the CalculatorPanel view"
                     });
                 },
@@ -92,7 +108,9 @@ sap.ui.define([
                         id: "0",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '0' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '0' button and clicked it")
+                        },
                         errorMessage: "Did not find the '0' button on the CalculatorPanel view"
                     });
                 },
@@ -101,7 +119,9 @@ sap.ui.define([
                         id: "leftPar",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '(' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '(' button and clicked it")
+                        },
                         errorMessage: "Did not find the '(' button on the CalculatorPanel view"
                     });
                 },
@@ -110,7 +130,9 @@ sap.ui.define([
                         id: "rightPar",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the ')' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the ')' button and clicked it")
+                        },
                         errorMessage: "Did not find the ')' button on the CalculatorPanel view"
                     });
                 },
@@ -119,7 +141,9 @@ sap.ui.define([
                         id: "multButton",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '*' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '*' button and clicked it")
+                        },
                         errorMessage: "Did not find the '*' button on the CalculatorPanel view"
                     });
                 },
@@ -128,7 +152,9 @@ sap.ui.define([
                         id: "divButton",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '/' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '/' button and clicked it")
+                        },
                         errorMessage: "Did not find the '/' button on the CalculatorPanel view"
                     });
                 },
@@ -137,7 +163,9 @@ sap.ui.define([
                         id: "subtButton",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '-' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '-' button and clicked it")
+                        },
                         errorMessage: "Did not find the '-' button on the CalculatorPanel view"
                     });
                 },
@@ -146,25 +174,28 @@ sap.ui.define([
                         id: "sumButton",
                         viewName: sViewName,
                         actions: new Press(),
-                        success:function(){ Opa5.assert.ok(true,"found the '+' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '+' button and clicked it")
+                        },
                         errorMessage: "Did not find the '+' button on the CalculatorPanel view"
                     });
                 },
 
-                iPressCalculateButton:function(){
-                  return this.waitFor({
+                iPressCalculateButton: function () {
+                    return this.waitFor({
                         id: "calculateButton",
                         viewName: sViewName,
                         actions: new Press(),
-                        success: function(){
-                            Opa5.assert.ok(true,"found the calculate button");
+                        success: function () {
+                            Opa5.assert.ok(true, "found the calculate button");
                         },
-                        errorMessage: "Did not find the 'calculateButton' button on the CalculatorPanel view"})
+                        errorMessage: "Did not find the 'calculateButton' button on the CalculatorPanel view"
+                    })
                 }
             },
 
             assertions: {
-                iShouldFindTheOneIdButton:function(){
+                iShouldFindTheOneIdButton: function () {
                     return this.waitFor({
                         viewName: sViewName,
                         success: function () {
@@ -177,7 +208,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "2",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '2' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '2' button and clicked it")
+                        },
                         errorMessage: "Did not find the '2' button on the CalculatorPanel view"
                     });
                 },
@@ -185,7 +218,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "3",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '3' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '3' button and clicked it")
+                        },
                         errorMessage: "Did not find the '3' button on the CalculatorPanel view"
                     });
                 },
@@ -193,7 +228,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "4",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '4' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '4' button and clicked it")
+                        },
                         errorMessage: "Did not find the '4' button on the CalculatorPanel view"
                     });
                 },
@@ -201,7 +238,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "5",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '5' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '5' button and clicked it")
+                        },
                         errorMessage: "Did not find the '5' button on the CalculatorPanel view"
                     });
                 },
@@ -209,7 +248,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "6",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '6' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '6' button and clicked it")
+                        },
                         errorMessage: "Did not find the '6' button on the CalculatorPanel view"
                     });
                 },
@@ -217,7 +258,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "7",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '7' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '7' button and clicked it")
+                        },
                         errorMessage: "Did not find the '7' button on the CalculatorPanel view"
                     });
                 },
@@ -225,7 +268,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "8",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '8' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '8' button and clicked it")
+                        },
                         errorMessage: "Did not find the '8' button on the CalculatorPanel view"
                     });
                 },
@@ -233,7 +278,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "9",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '9' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '9' button and clicked it")
+                        },
                         errorMessage: "Did not find the '9' button on the CalculatorPanel view"
                     });
                 },
@@ -241,7 +288,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "0",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '0' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '0' button and clicked it")
+                        },
                         errorMessage: "Did not find the '0' button on the CalculatorPanel view"
                     });
                 },
@@ -249,7 +298,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "leftPar",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '(' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '(' button and clicked it")
+                        },
                         errorMessage: "Did not find the '(' button on the CalculatorPanel view"
                     });
                 },
@@ -257,7 +308,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "rightPar",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the ')' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the ')' button and clicked it")
+                        },
                         errorMessage: "Did not find the ')' button on the CalculatorPanel view"
                     });
                 },
@@ -265,7 +318,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "multButton",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '*' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '*' button and clicked it")
+                        },
                         errorMessage: "Did not find the '*' button on the CalculatorPanel view"
                     });
                 },
@@ -273,7 +328,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "divButton",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '/' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '/' button and clicked it")
+                        },
                         errorMessage: "Did not find the '/' button on the CalculatorPanel view"
                     });
                 },
@@ -281,7 +338,9 @@ sap.ui.define([
                     return this.waitFor({
                         id: "subtButton",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '-' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '-' button and clicked it")
+                        },
                         errorMessage: "Did not find the '-' button on the CalculatorPanel view"
                     });
                 },
@@ -289,19 +348,22 @@ sap.ui.define([
                     return this.waitFor({
                         id: "sumButton",
                         viewName: sViewName,
-                        success:function(){ Opa5.assert.ok(true,"found the '+' button and clicked it")},
+                        success: function () {
+                            Opa5.assert.ok(true, "found the '+' button and clicked it")
+                        },
                         errorMessage: "Did not find the '+' button on the CalculatorPanel view"
                     });
                 },
 
-                iShouldFindCalculateButton:function(){
-                  return this.waitFor({
+                iShouldFindCalculateButton: function () {
+                    return this.waitFor({
                         id: "calculateButton",
                         viewName: sViewName,
-                        success: function(){
-                            Opa5.assert.ok(true,"found the calculate button");
+                        success: function () {
+                            Opa5.assert.ok(true, "found the calculate button");
                         },
-                        errorMessage: "Did not find the 'calculateButton' button on the CalculatorPanel view"})
+                        errorMessage: "Did not find the 'calculateButton' button on the CalculatorPanel view"
+                    })
                 },
 
                 iShouldSeeNewValInInputField: function (expression) {
@@ -314,15 +376,15 @@ sap.ui.define([
                         },
                     });
                 },
-                
-                iShouldFindAnswerField:function(expression){
+
+                iShouldFindAnswerField: function (expression) {
                     return this.waitFor({
                         id: "expressionField",
                         viewName: sViewName,
-                        timeout: 1, 
-                        check:function(oAnswerField){
+                        timeout: 1,
+                        check: function (oAnswerField) {
                             var sValue = oAnswerField.mProperties.value;
-                            if(sValue == expression){
+                            if (sValue == expression) {
                                 return true;
                             }
                             return false;
@@ -333,7 +395,7 @@ sap.ui.define([
                         },
                         errorMessage: "didn't calculate correctly"
                     });
-                
+
                 }
             }
         }
