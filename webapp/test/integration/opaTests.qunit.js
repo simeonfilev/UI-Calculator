@@ -7,7 +7,6 @@ sap.ui.getCore().attachInit(function () {
 
 	sap.ui.require([
 		"sap/ui/acad/calculator/test/integration/InputValidation"
-
 	], function () {
 		QUnit.start();
 	});

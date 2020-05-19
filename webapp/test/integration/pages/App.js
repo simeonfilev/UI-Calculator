@@ -376,7 +376,27 @@ sap.ui.define([
                         },
                     });
                 },
-
+                iShouldFindListOfHistoryExpression:function(expression){
+                    return this.waitFor({
+                        id: "expressionsHistory",
+                        viewName: sViewName,
+                        success: function () {
+                            Opa5.assert.ok(true,"found the list of history expressions");
+                        },
+                    });
+                },
+                iShouldFindTheNewExpressionInHistory:function(expression,answer){
+                    return this.waitFor({
+                        id: "expressionsHistory",
+                        viewName: sViewName,
+                        success: function (oListExpression) {
+                            var oValueToCheck = oListExpression.getModel()["oData"]["tableHistory"][0];
+                            Opa5.assert.strictEqual(oValueToCheck["expression"],expression,"Expression added correctly to history");
+                            Opa5.assert.strictEqual(oValueToCheck["answer"],answer,"Answer added correctly to history");
+                            
+                        },
+                    });
+                },
                 iShouldFindAnswerField: function (expression) {
                     return this.waitFor({
                         id: "expressionField",

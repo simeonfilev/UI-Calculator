@@ -1,4 +1,4 @@
-<mvc:View controllerName="sap.ui.acad.calculator.controller.CalculatorPanel" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+<mvc:View controllerName="sap.ui.acad.calculator.controller.CalculatorPanel" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:ui="sap.ui.table">
 	<Panel class="sapUiResponsiveMargin" width="auto">
 		<content>
 			<FormattedText htmlText="Answer: {/calculator/answer}" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" width="95%" id="answer" />
@@ -26,6 +26,13 @@
 			<Button id="multButton" text="*" press=".addToExpression" class="myCustomText" width="22.5%" />
 		</content>
 	</Panel>
+	<Panel  class="sapUiResponsiveMargin" width="95%">
 
+		<List id="expressionsHistory" headerText="Expression History" items="{path: '/tableHistory'}">
+			<StandardListItem  title="{expression}" counter="{answer}" />
+		</List>
+
+
+	</Panel>
 
 </mvc:View>

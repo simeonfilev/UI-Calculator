@@ -9,13 +9,16 @@
 		data-sap-ui-theme="sap_bluecrystal" data-sap-ui-resourceroots='{
 			"sap.ui.acad.calculator": "../"
 		}' data-sap-ui-oninit="module:sap/ui/core/ComponentSupport" data-sap-ui-compatVersion="edge"
-		data-sap-ui-async="true">
-	</script>
+		data-sap-ui-async="true" data-sap-ui-libs="sap.ui.commons,sap.m,sap.ui.unified,sap.ui.table"
+		data-sap-ui-xx-bindingSyntax="complex">
+		</script>
+	    
 </head>
 
 <body class="sapUiBody" id="content">
 	<div data-sap-ui-component data-name="sap.ui.acad.calculator" data-id="container"
 		data-settings='{"id" : "calculator"}'></div>
+		<div id="uiArea"></div>
 </body>
 
 </html>

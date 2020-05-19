@@ -28,11 +28,29 @@ sap.ui.define([
           var dAnswer = oJSONData['answer'];
           oModel.setProperty("/calculator/answer", dAnswer);
           oModel.setProperty("/calculator/expression", dAnswer);
+
+          var oXHRNewHistory = new XMLHttpRequest();
+          oXHRNewHistory.open("GET", sURL, true);
+          oXHRNewHistory.send();
+          oXHRNewHistory.onload = function () {
+            if (oXHRNewHistory.status == 200) {
+              var oJSONData = JSON.parse(this.responseText);
+              var oJSONExpressions = oJSONData["expressions"];
+              var oJSONReversedResult = [];
+              var length = oJSONExpressions.length;
+              for (var i = length - 1; i >= 0; i--) {
+                oJSONReversedResult.push(oJSONExpressions[i]);
+              }
+              oModel.setProperty("/tableHistory", oJSONReversedResult);
+              oModel.refresh();
+            }
+          }
         } else {
           oModel.setProperty("/calculator/answer", "INVALID EXPRESSION");
           oModel.setProperty("/calculator/expression", "0");
         }
       }
+
     },
     addToExpression: function (e) {
       var sExpression = this.getView().getModel().getProperty("/calculator/expression");
