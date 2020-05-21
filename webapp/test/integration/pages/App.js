@@ -392,8 +392,6 @@ sap.ui.define([
                         success: function (oListExpression) {
                             var oValueToCheck = oListExpression.getModel()["oData"]["tableHistory"][0];
                             Opa5.assert.strictEqual(oValueToCheck["expression"],expression,"Expression added correctly to history");
-                            Opa5.assert.strictEqual(oValueToCheck["answer"],answer,"Answer added correctly to history");
-                            
                         },
                     });
                 },
@@ -401,7 +399,7 @@ sap.ui.define([
                     return this.waitFor({
                         id: "expressionField",
                         viewName: sViewName,
-                        timeout: 1,
+                        timeout: 5,
                         check: function (oAnswerField) {
                             var sValue = oAnswerField.mProperties.value;
                             if (sValue == expression) {
@@ -411,6 +409,7 @@ sap.ui.define([
                         },
                         success: function (oAnswerField) {
                             var sValueToCheck = oAnswerField.mProperties.value;
+                            console.log(sValueToCheck);
                             Opa5.assert.strictEqual(sValueToCheck, expression, "Expression entered correctly");
                         },
                         errorMessage: "didn't calculate correctly"

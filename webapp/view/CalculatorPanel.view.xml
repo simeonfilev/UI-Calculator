@@ -27,12 +27,9 @@
 		</content>
 	</Panel>
 	<Panel  class="sapUiResponsiveMargin" width="95%">
-
 		<List id="expressionsHistory" headerText="Expression History" items="{path: '/tableHistory'}">
-			<StandardListItem  title="{expression}" counter="{answer}" />
+			<DisplayListItem  label="{expression}" value="Answer: {answer}" />
 		</List>
-
-
 	</Panel>
 
 </mvc:View>
