@@ -12,11 +12,8 @@ sap.ui.define([
 				autoRespond: true,
 				autoRespondAfter: oUriParameters.get("serverDelay") || 500
 			});
-
-			var sPath = "../localService";
-
 			oMockServer.start();
-		
+			
 		}
 	};
 
